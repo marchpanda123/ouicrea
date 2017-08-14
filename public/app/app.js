@@ -1,4 +1,7 @@
-angular.module('ouicreaApp', ['appRoutes','mainController'])
+angular.module('ouicreaApp', ['appRoutes','mainController','authServices'])
+.config(function($httpProvider) {
+	$httpProvider.interceptors.push('AuthInterceptors');
+})
 .run(['$rootScope', function ($rootScope) {
     $rootScope.$on('$viewContentLoaded',function(){
         
