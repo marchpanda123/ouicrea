@@ -6,6 +6,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var router = express.Router();
 var appRoutes = require('./app/routes/api')(router);
+var indexes = require('./app/routes/index');
 var path = require('path');
 
 app.use(bodyParser.json());
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
 app.use('/fr', appRoutes);
+app.use('/api', indexes);
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/ouicrea', { useMongoClient: true }, function(err) {

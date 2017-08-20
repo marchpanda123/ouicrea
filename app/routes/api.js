@@ -2,6 +2,9 @@ var User = require('../models/user.js');
 var Verify = require('./verify.js');
 var jwt = require('jsonwebtoken');
 var secret = 'ouicreasecret';
+//upload image
+var multer = require('multer');
+var uploadNewsPage = multer({ dest: 'public/uploads/newspage' });
 
 module.exports = function(router){
 
@@ -50,7 +53,13 @@ module.exports = function(router){
 		res.send(req.decoded);
 	});
 
-	
+	//image post api
+	router.post('/uploadNewsPage', uploadNewsPage.any(),function(req, res) {
+	    var imageInfo = req.files[0];
+	    console.log(imageInfo);
+	    res.json(imageInfo);
+	});
+
 	return router;
 }
 

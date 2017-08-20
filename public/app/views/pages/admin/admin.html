@@ -241,7 +241,10 @@
                         <a ui-sref="admin"><i class="fa fa-dashboard fa-fw"></i>控制台</a>
                     </li>
                     <li>
-                        <a ui-sref="admin.news"><i class="fa fa-table fa-fw"></i> 新闻板块</a>
+                        <a ui-sref="admin.tag"><i class="fa fa-dashboard fa-fw"></i>标签管理</a>
+                    </li>
+                    <li>
+                        <a ui-sref="admin.news"><i class="fa fa-table fa-fw"></i> 文章管理</a>
                     </li>
                     <li>
                         <a ui-sref="admin.project"><i class="fa fa-table fa-fw"></i> 项目申请</a>
@@ -257,7 +260,17 @@
 
 		<div ui-view>
 
-        <div>主页</div>
+        <div>
+            <ul class="admin-ul">
+                <li class="matrix-card"><a ui-sref="admin">控制台</a></li>
+                <li class="matrix-card green"><a ui-sref="admin.tag">我的标签</a></li>
+                <li class="matrix-card yellow"><a ui-sref="admin.news">我的文章</a></li>
+                <li class="matrix-card orange"><a ui-sref="admin">我的项目</a></li>
+                <li class="matrix-card bluels"><a ui-sref="admin">我的项目</a></li>
+            </ul>
+        </div>
+
+        <div></div>
         <!-- /.row -->
         
         <!-- /.row -->

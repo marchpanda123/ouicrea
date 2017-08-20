@@ -1,0 +1,106 @@
+<div class="container-fluid">
+        <div class="row page-title-row">
+            <div class="col-md-12">
+                <h3>文章
+                    <small>» 创建文章</small>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新建文章表单</h3>
+                    </div>
+                    <div class="panel-body">
+
+
+                        <form class="form-horizontal">
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="title" class="col-md-2 control-label">
+                                            文章名
+                                        </label>
+
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" name="title" autofocus 
+                                                   maxlength="20" ng-model="currentNews.n_title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subtitle" class="col-md-2 control-label">
+                                            文章简介
+                                        </label>
+
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" name="intro"
+                                                   maxlength="30" ng-model="currentNews.n_bref">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="page_image" class="col-md-2 control-label">
+                                            页面图片
+                                        </label>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <input type="file" class="form-control"
+                                                        file-model="NewsPage.n_page">
+                                                </div>
+                                                <!-- <div class="col-md-6 col-sm-6 text-right">
+                                                    <img src="{{old('page_image')}}" class="img img_responsive"
+                                                         id="page-image-preview" style="max-height:40px">
+                                                </div> -->
+                                                <div class="col-md-6 col-sm-6" id="validation-errors">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="content" class="col-md-2 control-label">
+                                            内容
+                                        </label>
+
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" name="content" rows="14"
+                                                      ng-model="currentNews.n_content"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="tags" class="col-md-4 control-label">
+                                            所属标签
+                                        </label>
+
+                                        <div class="col-md-7">
+                                            <select class="form-control" ng-model="currentNews.n_belongTag">
+                                                    <option ng-repeat="item in addnews.tags" value="{{item._id}}">
+                                                        {{item.t_name}}
+                                                    </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-2">
+                                        <button ng-click="addnews.createNews(currentNews)" class="btn btn-primary btn-lg">
+                                            保存新文章
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

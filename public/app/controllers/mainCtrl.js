@@ -1,4 +1,4 @@
-angular.module('mainController', ['authServices'])
+angular.module('mainController', ['authServices','newsServices','tagServices'])
 .controller('mainCtrl',function(Auth, $location, $timeout, $state) {
 	app = this;
 	
@@ -70,5 +70,102 @@ angular.module('mainController', ['authServices'])
 		}, 2000);
 	};
 
+})
+.controller('newsCtrl', function(NewsFactory,$scope,TagFactory,$state,multipartForm){
+	app = this;
 
+	$scope.currentNews = {};
+
+	app.listNews = function() {
+		app.news = NewsFactory.query();
+		console.log(app.news);
+	}
+
+	$scope.NewsPage = {};
+
+	app.createNews = function(news) {
+		var pageImage = $scope.NewsPage;
+		var uploadUrl = '/fr/uploadNewsPage';
+		console.log(pageImage);
+		multipartForm.post(uploadUrl, pageImage)
+		.then(function(r){
+			console.log(r);
+			$scope.currentNews.n_page = r.data.filename;
+			new NewsFactory(news).$create()
+			.then(function(updatenews) {
+				app.news.push(updatenews);
+				console.log(updatenews);
+				$state.go('admin.news');
+			});
+		});
+	}
+
+	app.updateNews = function(news) {
+		news.$save({newsId:news._id})
+		.then(function(UpNews) {
+			app.news.splice(
+				app.news.indexOf(UpNews),1,UpNews);
+		});
+	}
+
+	app.deleteNews = function(news) {
+		news.$delete({newsId:news._id})
+		.then(function() {
+			app.news.splice(app.news.indexOf(news),1)
+		})
+	}
+
+	app.listTag = function() {
+		app.tags = TagFactory.query();
+		console.log(app.tags);
+	}
+
+	//pageupload
+	$scope.newsPage = {}
+	$scope.SubmitNewsPage = function(item) {
+		
+	}
+
+	app.listTag();
+	app.listNews();
+})
+.controller('tagCtrl', function(TagFactory,$scope,$state){
+	app = this;
+
+	app.listTag = function() {
+		app.tags = TagFactory.query();
+		console.log(app.tags);
+	}
+
+	app.currentTag = {};
+	app.createTag = function(tags) {
+		new TagFactory(tags).$create()
+		.then(function(newTag) {
+			app.tags.push(newTag);
+			$state.reload();
+		});
+	}
+
+	app.updateTag = function(tags) {
+		tags.$save({tagId:tags._id})
+		.then(function(UpNews) {
+			app.tags.splice(
+				app.tags.indexOf(UpNews),1,UpNews);
+		});
+	}
+
+	$scope.deleteTag = function(tags) {
+		tags.$delete({tagId:tags._id})
+		.then(function() {
+			app.tags.splice(app.tags.indexOf(tags),1)
+		})
+	}
+
+	//addfunc
+	app.addstatus = false;
+	app.addfunc = function(){
+		app.addstatus = !app.addstatus ;
+	}
+
+	app.listTag();
 });

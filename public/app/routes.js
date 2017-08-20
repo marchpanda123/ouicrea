@@ -41,11 +41,33 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
+	.state('admin.tag', {
+		url:'/admintag',
+		views: {
+			'': {
+				templateUrl:'app/views/pages/admin/admintag.html',
+				controller: 'tagCtrl',
+				controllerAs: 'tag'
+			}
+		}
+	})
 	.state('admin.news', {
 		url:'/adminnews',
 		views: {
 			'': {
-				templateUrl:'app/views/pages/admin/adminnews.html'
+				templateUrl:'app/views/pages/admin/adminnews.html',
+				controller: 'newsCtrl',
+				controllerAs: 'news'
+			}
+		}
+	})
+	.state('admin.addnews', {
+		url:'/adminaddnews',
+		views: {
+			'': {
+				templateUrl:'app/views/pages/admin/adminaddnews.html',
+				controller: 'newsCtrl',
+				controllerAs: 'addnews'
 			}
 		}
 	})
@@ -61,5 +83,20 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/');
 
 	$locationProvider.html5Mode(true).hashPrefix('!');
-});
+})
+.directive('fileModel', ['$parse', function($parse) {
+	return {
+		restrict: 'A',
+		link: function(scope, element, attrs){
+			var model = $parse(attrs.fileModel);
+			var modelSetter = model.assign;
+
+			element.bind('change', function() {
+				scope.$apply(function(){
+					modelSetter(scope, element[0].files[0]);
+				});
+			});
+		}
+	};
+}]);
 

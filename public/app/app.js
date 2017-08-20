@@ -1,4 +1,4 @@
-angular.module('ouicreaApp', ['appRoutes','mainController','authServices'])
+angular.module('ouicreaApp', ['appRoutes','mainController','authServices','newsServices','tagServices'])
 .config(function($httpProvider) {
 	$httpProvider.interceptors.push('AuthInterceptors');
 })

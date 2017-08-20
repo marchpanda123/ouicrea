@@ -67,10 +67,13 @@ h4 span {
 	color: #55acee;
 }
 a {
+	text-decoration: none;
+	cursor: pointer;
 	color: #55acee;
 }
 a:hover {
 	color: #339BEB;
+	cursor: pointer;
 }
 a:focus,
 a:active {
@@ -856,4 +859,45 @@ textarea {
 .btn-es {
 	min-width: 20px !important;
 	padding: 11.5px 14px !important;
+}
+
+/*818*/
+.newspage{
+	width: auto;
+	height: 50px;
+}
+/*admin-ul*/
+.admin-ul{
+	list-style: none;
+}
+
+.matrix-card{
+  background: #27a9e3;
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none;
+  line-height: 18px;
+  padding: 0;
+}
+
+.matrix-card a{
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.green{
+  background: #28b779 !important;
+}
+.yellow{
+  background: #ffb848 !important;
+}
+.orange{
+  background: #da542e !important;
+}
+.bluels{
+  background: #2255a4 !important;
 }
