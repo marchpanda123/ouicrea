@@ -1,5 +1,5 @@
-angular.module('mainController', ['authServices','newsServices','tagServices'])
-.controller('mainCtrl',function(Auth, $location, $timeout, $state) {
+angular.module('mainController', ['authServices','newsServices','tagServices','projectServices'])
+.controller('mainCtrl',function(Auth, $location, $timeout, $state, $scope, $rootScope,$location) {
 	app = this;
 	
 	app.fullscreenfunc = function() {
@@ -29,7 +29,7 @@ angular.module('mainController', ['authServices','newsServices','tagServices'])
 		  pause: "false"
 		});
 	}
-
+	
 	if(Auth.isLoggedIn()) {
 		console.log('Success: User is logged in.');
 		Auth.getUser().then(function(data){
@@ -70,8 +70,15 @@ angular.module('mainController', ['authServices','newsServices','tagServices'])
 		}, 2000);
 	};
 
+	$rootScope.isNav = true;
+
+	app.backHome = function() {
+		$rootScope.isNav = true;
+		$location.path('/');
+	}
+
 })
-.controller('newsCtrl', function(NewsFactory,$scope,TagFactory,$state,multipartForm){
+.controller('newsCtrl', function(NewsFactory,$scope,TagFactory,$state,multipartForm, $stateParams,NewsGetFactory){
 	app = this;
 
 	$scope.currentNews = {};
@@ -120,14 +127,31 @@ angular.module('mainController', ['authServices','newsServices','tagServices'])
 		console.log(app.tags);
 	}
 
-	//pageupload
-	$scope.newsPage = {}
-	$scope.SubmitNewsPage = function(item) {
-		
+	//toArticle
+	app.toArticle = function(article){
+		$state.go('app.newspage', {newsId: article._id});
+		window.parent.$("body").animate({scrollTop:0}, 'fast');
 	}
 
 	app.listTag();
 	app.listNews();
+})
+.controller('pageCtrl', function($stateParams,NewsGetFactory,TagFactory,$rootScope,$state){
+	var app = this;
+	var newsId =  $stateParams.newsId;
+	NewsGetFactory.getNews(newsId)
+	.then(function(data){
+		app.newspage = data.data;
+		console.log(app.newspage);
+	})
+	app.listTag = function() {
+		app.tags = TagFactory.query();
+	}
+	app.listTag();
+	$rootScope.isNav = false;
+	console.log($rootScope.isNav);
+
+	
 })
 .controller('tagCtrl', function(TagFactory,$scope,$state){
 	app = this;
@@ -168,4 +192,39 @@ angular.module('mainController', ['authServices','newsServices','tagServices'])
 	}
 
 	app.listTag();
+})
+.controller('projectCtrl', function(ProjectFactory,$scope,$state){
+	app = this;
+	app.sucmsg = false;
+	app.listProject = function() {
+		app.projects = ProjectFactory.query();
+		console.log(app.projects);
+		app.sucmsg = false;
+	}
+
+	app.currentProject = {};
+	app.createProject = function(projects) {
+		new ProjectFactory(projects).$create()
+		.then(function(newProject) {
+			app.projects.push(newProject);
+			app.sucmsg = true;
+		});
+	}
+
+	app.updateProject = function(projects) {
+		projects.$save({projectId:projects._id})
+		.then(function(UpNews) {
+			app.projects.splice(
+				app.projects.indexOf(UpNews),1,UpNews);
+		});
+	}
+
+	$scope.deleteProject = function(projects) {
+		projects.$delete({projectId:projects._id})
+		.then(function() {
+			app.projects.splice(app.projects.indexOf(projects),1)
+		})
+	}
+
+	app.listProject();
 });

@@ -2,10 +2,13 @@ var mongoose = require('mongoose');
 var Tag = mongoose.model('Tag');
 
 module.exports.tagGet = function(req, res) {
-	Tag.find(function(err, tag) {
+
+	Tag.find()
+	.sort('-created')
+	.exec(function(err, tag){
 		if(err) res.send(err);
-		res.json(tag);
-	});
+		res.send(tag);
+	})
 }
 
 module.exports.tagPost = function(req, res) {

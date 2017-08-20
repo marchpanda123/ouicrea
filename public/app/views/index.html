@@ -50,6 +50,7 @@
 	<script type="text/javascript" src="app/services/userServices.js"></script>
 	<script type="text/javascript" src="app/services/newsServices.js"></script>
 	<script type="text/javascript" src="app/services/tagServices.js"></script>
+	<script type="text/javascript" src="app/services/projectServices.js"></script>
 </head>
 
 <body class="no-trans" ng-app="ouicreaApp" ng-controller="mainCtrl as main">
@@ -58,9 +59,9 @@
 	
 	<div ui-view></div>
 
-	<div ui-view="header"></div>
+	<div ui-view="header" autoscroll="true"></div>
 
-	<div ui-view="body"></div>
+	<div ui-view="body" autoscroll="true"></div>
 	
 	<div ui-view="footer"></div>
 	

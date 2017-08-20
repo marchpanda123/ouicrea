@@ -15,16 +15,16 @@ router.use(function(req, res, next) {
 });
 
 //news router
-router.get('/news', Verify.verifyOrdinaryUser, newsCtrl.newsGet);
+router.get('/news', newsCtrl.newsGet);
 router.post('/news', Verify.verifyOrdinaryUser, newsCtrl.newsPost);
-router.get('/news/:newsId', Verify.verifyOrdinaryUser, newsCtrl.newsGetId);
+router.get('/news/:newsId', newsCtrl.newsGetId);
 router.put('/news/:newsId', Verify.verifyOrdinaryUser, newsCtrl.newsPutId);
 router.delete('/news/:newsId', Verify.verifyOrdinaryUser, newsCtrl.newsDeleteId);
 
 //tag router
-router.get('/tag', Verify.verifyOrdinaryUser, tagCtrl.tagGet);
+router.get('/tag', tagCtrl.tagGet);
 router.post('/tag', Verify.verifyOrdinaryUser, tagCtrl.tagPost);
-router.get('/tag/:tagId', Verify.verifyOrdinaryUser, tagCtrl.tagGetId);
+router.get('/tag/:tagId', tagCtrl.tagGetId);
 router.put('/tag/:tagId', Verify.verifyOrdinaryUser, tagCtrl.tagPutId);
 router.delete('/tag/:tagId', Verify.verifyOrdinaryUser, tagCtrl.tagDeleteId);
 

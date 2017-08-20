@@ -29,17 +29,13 @@
                         <tr>
                             <th>标签名</th>
                             <th>创建时间</th>
-                            <th>Platform(s)</th>
-                            <th>Engine version</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody ng-repeat="item in tag.tags">
                         <tr class="gradeX">
                             <td>{{item.t_name}}</td>
-                            <td>{{item.t_created | date:"MM/dd/yyyy 'at' h:mma"}}</td>
-                            <td></td>
-                            <td class="center"></td>
+                            <td>{{item.created | date:"MM/dd/yyyy 'at' h:mma"}}</td>
                             <td class="center"><a ng-click="deleteTag(item)">删除</a></td>
                         </tr>
                         

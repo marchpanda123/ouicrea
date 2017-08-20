@@ -50,12 +50,13 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
 									<ul class="nav navbar-nav navbar-right">
-										<li class="active"><a href="#mycarousel">Home</a></li>
-										<li><a href="#about">About</a></li>
-										<li><a href="#services">Services</a></li>
-										<li><a href="#portfolio">Portfolio</a></li>
-										<li><a href="#clients">Clients</a></li>
-										<li><a href="#contact">Contact</a></li>
+										<li class="active" ng-show ="isNav"><a href="#mycarousel">Home</a></li>
+										<li ng-show ="!isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>
+										<li><a href="#about" ng-show ="isNav">About</a></li>
+										<li><a href="#services" ng-show ="isNav">Services</a></li>
+										<li><a href="#portfolio" ng-show ="isNav">Portfolio</a></li>
+										<li><a href="#clients" ng-show ="isNav">Clients</a></li>
+										<li><a href="#contact" ng-show ="isNav">Contact</a></li>
 									</ul>
 								</div>
 

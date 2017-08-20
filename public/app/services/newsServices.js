@@ -5,6 +5,15 @@ angular.module('newsServices', ['ngResource'])
 		"/api/news/:newsId", {newsId: "@id"},
 		{ create: {method:"POST"}, save: {method:"PUT"}});
 })
+.factory('NewsGetFactory', function($http) {
+	var NewsGetFactory = {};
+
+	NewsGetFactory.getNews = function(newsId) {
+		return $http.get('/api/news/' + newsId);
+	}
+
+	return NewsGetFactory;
+})
 .service('multipartForm', ['$http', function($http) {
 	this.post = function(uploadUrl, data) {
 		var fd = new FormData();

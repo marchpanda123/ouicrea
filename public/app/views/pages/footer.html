@@ -3,7 +3,7 @@
 	<!-- ================ -->
 	<div class="footer section">
 		<div class="container">
-			<h1 class="title text-center" id="contact">Contact Us</h1>
+			<h1 class="title text-center" id="contact">项目申请</h1>
 			<div class="space"></div>
 			<div class="row">
 				<div class="col-sm-6">
@@ -27,25 +27,36 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6" ng-controller="projectCtrl as project">
 					<div class="footer-content">
-						<form role="form" id="footer-form">
+						<form ng-submit="project.createProject(project.currentProject)">
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="name2">Name</label>
-								<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+								<label class="sr-only" for="name2">申请人姓名</label>
+								<input type="text" class="form-control" id="name2" placeholder="申请人姓名" name="name2" ng-model="project.currentProject.p_username" required>
 								<i class="fa fa-user form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="email2">Email address</label>
-								<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+								<label class="sr-only" for="email2">申请人联系方式</label>
+								<input type="text" class="form-control" id="email2" placeholder="申请人联系方式" name="email2" ng-model="project.currentProject.p_usercontact" required>
 								<i class="fa fa-envelope form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="message2">Message</label>
-								<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
+								<label class="sr-only" for="email2">项目名称</label>
+								<input type="text" class="form-control" id="email2" placeholder="项目名称" name="email2" ng-model="project.currentProject.p_title" required>
+								<i class="fa fa-envelope form-control-feedback"></i>
+							</div>
+							<div class="form-group has-feedback">
+								<label class="sr-only" for="message2">项目内容</label>
+								<textarea class="form-control" rows="8" id="message2" placeholder="项目内容" name="message2" ng-model="project.currentProject.p_content" required></textarea>
 								<i class="fa fa-pencil form-control-feedback"></i>
 							</div>
-							<input type="submit" value="Send" class="btn btn-default">
+							<div class="alert alert-success" role="alert" ng-show="project.sucmsg">
+							  <h4 class="alert-heading">提交成功！</h4>
+							  <p>恭喜您成功的提交了项目申请，我们会在3个工作日之内与你取得联系，谢谢！</p>
+							  <hr>
+							  <p class="mb-0">如果你还有什么问题，可以联系我们邮箱contact@ouicrea.com</p>
+							</div>
+							<input type="submit" value="提交申请" class="btn btn-default" ng-show="!project.sucmsg">
 						</form>
 					</div>
 				</div>

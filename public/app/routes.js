@@ -1,4 +1,4 @@
-var app = angular.module('appRoutes',['ui.router']);
+var app = angular.module('appRoutes',['ui.router','authServices']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
@@ -6,7 +6,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 		url:'/',
 		views: {
 			'header': {
-				templateUrl:'app/views/pages/header.html'
+				templateUrl:'app/views/pages/header.html',
+				controller:'mainCtrl',
+				controlleras:'main'
 			},
 			'body': {
 				templateUrl:'app/views/pages/body.html'
@@ -16,7 +18,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
-
+	.state('app.newspage', {
+		url:'newspage/:newsId',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/newspage.html',
+				controller: 'pageCtrl',
+				controllerAs: 'page'
+			}
+		}
+	})
 	.state('ouicreaadmin', {
 		url:'/ouicreaadmin',
 		views: {
@@ -35,6 +46,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	})
 	.state('admin', {
 		url:'/admin',
+		data:{
+				needLogin: true
+		},
 		views: {
 			'': {
 				templateUrl:'app/views/pages/admin/admin.html'
@@ -43,6 +57,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	})
 	.state('admin.tag', {
 		url:'/admintag',
+		data:{
+				needLogin: true
+		},
 		views: {
 			'': {
 				templateUrl:'app/views/pages/admin/admintag.html',
@@ -53,6 +70,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	})
 	.state('admin.news', {
 		url:'/adminnews',
+		data:{
+				needLogin: true
+		},
 		views: {
 			'': {
 				templateUrl:'app/views/pages/admin/adminnews.html',
@@ -63,6 +83,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	})
 	.state('admin.addnews', {
 		url:'/adminaddnews',
+		data:{
+				needLogin: true
+		},
 		views: {
 			'': {
 				templateUrl:'app/views/pages/admin/adminaddnews.html',
@@ -73,9 +96,14 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	})
 	.state('admin.project', {
 		url:'/adminproject',
+		data:{
+				needLogin: true
+		},
 		views: {
 			'': {
-				templateUrl:'app/views/pages/admin/adminproject.html'
+				templateUrl:'app/views/pages/admin/adminproject.html',
+				controller: 'projectCtrl',
+				controllerAs: 'project'
 			}
 		}
 	});
@@ -98,5 +126,18 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			});
 		}
 	};
+}])
+.run(['$rootScope', '$state', 'Auth', function($rootScope, $state, Auth) {
+  $rootScope.$on('$stateChangeStart', function(e, to) {
+
+    if (to.data && to.data.needLogin) {
+    	if(!Auth.isLoggedIn()) {
+    		e.preventDefault();
+		      $state.go('app');
+    	}
+      
+    }
+
+  });
 }]);
 

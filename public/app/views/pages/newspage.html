@@ -1,0 +1,89 @@
+<!-- Modal
+	<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="project-1-label">{{item.n_title}}</h4>
+				</div>
+				<div class="modal-body">
+					<h3>{{item.n_bref}}</h3>
+					<div class="row">
+						<div class="col-md-6">
+							<p>{{item.n_content}}</p>
+						</div>
+						<div class="col-md-6">
+							<img ng-src="uploads/newspage/{{item.n_page}}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	Modal end -->
+<div>
+  <div class="title-home">
+    <h1>Ouicrea</h1>
+    <p>Ouicrea Ouicrea Ouicrea</p>
+  </div>
+  <video autoplay loop src="assets/video/video.mp4" class="video-home">
+    <img src="assets/img/1.jpg">
+  </video>
+</div>
+
+<div id="mainOrder" class="content-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-md-6 col-xs-12 orderfood-index-bg tomiddle">
+
+					<div class="foodpageimg">
+						<img ng-src="uploads/newspage/{{page.newspage.n_page}}">
+					</div>
+					<div class="rc-date"> <span>{{page.newspage.created | date:'mediumDate'}}</span></div>
+					<ul class="title-bar">
+						<li> 
+							标题:<span> <span>{{page.newspage.n_title}}</span></span>
+						</li>
+					</ul>
+					<div>
+						<p class="p-grey">文章正文</p>
+						<p>{{page.newspage.n_content}}</p>
+					</div>
+
+		
+
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<div class="orderfood-index-bg orderfood-right-box">
+				<div class="rc-sidebar">
+					<div class="">
+						<h2 class="page-tag">热门标签</h2>
+						<ul class="page-li-tag">
+							<li  ng-repeat="item in page.tags">
+								<p>{{item.t_name}}</p>
+							</li>
+						</ul>
+					</div>
+					<div class="">
+						<h2 class="page-tag">最新文章</h2>
+						<div class="media page-hot-box"> 
+							<a class="pull-left"> 
+								<img width="64" height="64" src="https://radiustheme.com/demo/wordpress/redchili/wp-content/uploads/2017/05/recipe-03-94x84.jpg" class="">
+							</a>
+							<div class="media-body">
+								<p class="page-hot">
+									<a>Breadsticks with Homemade Pizza Sauce</a>
+								</p>
+								<p>31 May, 2017</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -11,8 +11,9 @@ module.exports.projectGet = function(req, res) {
 module.exports.projectPost = function(req, res) {
 
 	var project = new Project();
-	project.p_name = req.body.p_name;
-	project.p_contact = req.body.p_contact;
+	project.p_username = req.body.p_username;
+	project.p_usercontact = req.body.p_usercontact;
+	project.p_title = req.body.p_title;
 	project.p_content = req.body.p_content;
 	project.save(function(err) {
 		if(err) res.send(err);
@@ -30,8 +31,9 @@ module.exports.projectGetId = function(req, res) {
 module.exports.projectPutId = function(req, res) {
 	Project.findById(req.params.projectId, function(err, project) {
 		if(err) res.send(err);
-		project.p_name = req.body.p_name;
-		project.p_contact = req.body.p_contact;
+		project.p_username = req.body.p_username;
+		project.p_usercontact = req.body.p_usercontact;
+		project.p_title = req.body.p_title;
 		project.p_content = req.body.p_content;
 		project.save(function(err) {
 			if(err) res.send(err);
