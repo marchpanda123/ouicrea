@@ -39,10 +39,10 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 		console.log('Failure: User is NOT logged in.');
 	}
 
-	app.doLogin = function(loginData) {
+	app.doLogin = function() {
 		app.loading = true;
 		app.errorMsg = false;
-
+		console.log(app.loginData);
 		Auth.login(app.loginData)
 		.then(function(data) {
 			if(data.data.success) {
@@ -52,7 +52,6 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 				//redirect to home page
 				$timeout(function(){
 					$location.path('/admin');
-					window.location.reload();
 				}, 2000);
 			} else {
 				app.loading = false;
@@ -61,12 +60,34 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 		});
 	};
 
+	app.doPost = function() {
+		app.loading = true;
+		app.errorMsg = false;
+
+		Auth.post(app.postData)
+		.then(function(data) {
+			console.log(data);
+			/*if(data.data.success) {
+				app.loading = false;
+				//create success message
+				app.successMsg = data.data.message + '正在登录，为您跳转回主页...';
+				//redirect to home page
+				$timeout(function(){
+					$location.path('/');
+					window.location.reload();
+				}, 2000);
+			} else {
+				app.loading = false;
+				app.errorMsg = data.data.message
+			}*/
+		});
+	};
+
 	app.logout = function() {
 		Auth.logout();
 		$location.path('/logout');
 		$timeout(function() {
 			$location.path('/');
-			window.location.reload();
 		}, 2000);
 	};
 
@@ -135,6 +156,7 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 
 	app.listTag();
 	app.listNews();
+
 })
 .controller('pageCtrl', function($stateParams,NewsGetFactory,TagFactory,$rootScope,$state){
 	var app = this;
@@ -151,7 +173,6 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 	$rootScope.isNav = false;
 	console.log($rootScope.isNav);
 
-	
 })
 .controller('tagCtrl', function(TagFactory,$scope,$state){
 	app = this;

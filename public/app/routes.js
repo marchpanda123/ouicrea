@@ -36,6 +36,14 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
+	.state('ouicreaadminpostoch', {
+		url:'/ouicreaadminpostoch',
+		views: {
+			'': {
+				templateUrl:'app/views/pages/post.html'
+			}
+		}
+	})
 	.state('logout', {
 		url:'/logout',
 		views: {

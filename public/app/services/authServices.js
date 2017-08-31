@@ -11,6 +11,13 @@ angular.module('authServices', [])
 		});
 	}
 
+	authFactory.post = function(postData) {
+		return $http.post('/fr/users', postData)
+		.then(function(data) {
+			console.log(data);
+		});
+	}
+
 	authFactory.isLoggedIn = function() {
 		if(AuthToken.getToken()) {
 			return true;
