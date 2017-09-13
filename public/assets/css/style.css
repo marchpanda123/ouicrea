@@ -1385,3 +1385,30 @@ transition-delay:.2s;
 .margin-bottom{
 	margin-bottom: 20px;
 }
+
+
+@media screen and (max-width: 480px) {
+	.foodpageimg img{
+		width: 250px;
+		margin-left:9%;
+	}
+	.rc-date {
+	    position: absolute;
+	    z-index: 1;
+	    top: 0;
+	    background-color: #55acee;
+	    width: 80px;
+	    text-align: center;
+	    left: 4.2%;
+	    padding-top: 15px;
+	    padding-bottom: 8px;
+	    text-transform: uppercase;
+	}
+	.tomiddle {
+    	margin-left: 3%;
+	}
+	.orderfood-right-box {
+    	padding: 5px;
+    	margin-top: 20px;
+	}
+}
