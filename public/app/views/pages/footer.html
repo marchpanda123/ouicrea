@@ -3,27 +3,26 @@
 	<!-- ================ -->
 	<div class="footer section">
 		<div class="container">
-			<h1 class="title text-center" id="contact">项目申请</h1>
+			<h1 class="title text-center" id="contact">Contactez-nous</h1>
 			<div class="space"></div>
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="footer-content">
-						<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis.</p>
+						<p class="large"><i class="fa fa-envelope-o pr-10"></i>Contact@ouicrea.com</p>
 						<ul class="list-icons">
-							<li><i class="fa fa-map-marker pr-10"></i> 55 Boulevard Vincent-Auriol, 75013 Paris </li>
-							<li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-							<li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
-							<li><i class="fa fa-envelope-o pr-10"></i> Email: contact@ouicrea.com</li>
+							<li><i class="fa fa-map-marker pr-10"></i> 55 Boulevard Vincent-Auriol, 75013 Paris <br><i class="fa fa-phone pr-10"></i>+33 (0)671605960<br><i class="fa fa-envelope-o pr-10"></i>Email: weiyuan.xu@ouicrea.com<br><br></li>
+							<li><i class="fa fa-map-marker pr-10"></i>333, Hongqiao Rd, Xuhui District, Shanghai, China<br><i class="fa fa-phone pr-10"></i>+86 (0)21 5466 7200<br><i class="fa fa-envelope-o pr-10"></i>Email: tianlun.li@ouicrea.com<br></li>
+							<li><i class="fa fa-map-marker pr-10"></i>58 Nantiancheng Rd, Xiangcheng District, Suzhou, China<br><i class="fa fa-phone pr-10"></i>+86 (0)21 5466 7200<br><i class="fa fa-envelope-o pr-10"></i>Email: yuan.liu@ouicrea.com</li>
 						</ul>
 						<ul class="social-links">
-							<li class="facebook"><a target="_blank" href="https://www.facebook.com/pages/HtmlCoder/714570988650168"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>
-							<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-							<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-							<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-							<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-							<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-							<li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+							<li class="facebook"><a target="_blank" href="https://www.facebook.com/OuiCrea/"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a target="_blank" href="https://twitter.com/ouicrea"><i class="fa fa-twitter"></i></a></li>
+							<li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+							<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/11094106/"><i class="fa fa-linkedin"></i></a></li>
+							<li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+							<li class="flickr"><a target="_blank" href="#"><i class="fa fa-flickr"></i></a></li>
+							<li class="pinterest"><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -31,23 +30,35 @@
 					<div class="footer-content">
 						<form ng-submit="project.createProject(project.currentProject)">
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="name2">申请人姓名</label>
-								<input type="text" class="form-control" id="name2" placeholder="申请人姓名" name="name2" ng-model="project.currentProject.p_username" required>
+								<label class="sr-only" for="name2">申请人姓名／Nom</label>
+								<input type="text" class="form-control" id="name2" placeholder="申请人姓名／Nom" name="name2" ng-model="project.currentProject.p_username" required>
 								<i class="fa fa-user form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="email2">申请人联系方式</label>
-								<input type="text" class="form-control" id="email2" placeholder="申请人联系方式" name="email2" ng-model="project.currentProject.p_usercontact" required>
+								<label class="sr-only" for="email2">申请人联系方式／Informations de contact</label>
+								<input type="text" class="form-control" id="email2" placeholder="申请人联系方式／Informations de contact" name="email2" ng-model="project.currentProject.p_usercontact" required>
 								<i class="fa fa-envelope form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="email2">项目名称</label>
-								<input type="text" class="form-control" id="email2" placeholder="项目名称" name="email2" ng-model="project.currentProject.p_title" required>
-								<i class="fa fa-envelope form-control-feedback"></i>
+								<!--<label class="sr-only" for="email2">项目名称</label>-->
+							<select class="form-control" ng-model="project.currentProject.p_title" ng-init="project.currentProject.p_title='1'">
+								<option ng-selected="true" value="1">选择分类／Sélectionnez une catégorie</option>
+								<option value="申请入驻">申请入驻／Devenir incubé</option>
+								<option value="申请参观">申请参观／Demande de visite</option>
+								<option value="跨境孵化">跨境孵化／Incubation transfrontalière</option>
+								<option value="融资需求">融资需求／Levée de fonds</option>
+								<option value="创新之旅">创新之旅／OuiCrea Tour</option>
+								<option value="合作">合作／Coopération</option>
+								<option value="创投俱乐部">创投俱乐部／Cercle d’investisseurs</option>
+								<option value="其他">其他／Autre</option>
+							</select>
+								<!--<input type="text" class="form-control" id="email2" placeholder="项目名称" name="email2" ng-model="project.currentProject.p_title" required>-->
+								<!--<i class="fa fa-envelope form-control-feedback"></i>-->
 							</div>
+
 							<div class="form-group has-feedback">
-								<label class="sr-only" for="message2">项目内容</label>
-								<textarea class="form-control" rows="8" id="message2" placeholder="项目内容" name="message2" ng-model="project.currentProject.p_content" required></textarea>
+								<label class="sr-only" for="message2">项目内容／Contenu du projet</label>
+								<textarea class="form-control" rows="8" id="message2" placeholder="项目内容／Contenu du projet" name="message2" ng-model="project.currentProject.p_content" required></textarea>
 								<i class="fa fa-pencil form-control-feedback"></i>
 							</div>
 							<div class="alert alert-success" role="alert" ng-show="project.sucmsg">
@@ -56,7 +67,7 @@
 							  <hr>
 							  <p class="mb-0">如果你还有什么问题，可以联系我们邮箱contact@ouicrea.com</p>
 							</div>
-							<input type="submit" value="提交申请" class="btn btn-default" ng-show="!project.sucmsg">
+							<input type="submit" value="提交申请／Envoyer" class="btn btn-default" ng-show="!project.sucmsg">
 						</form>
 					</div>
 				</div>

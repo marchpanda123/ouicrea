@@ -1,28 +1,42 @@
 <header class="header fixed clearfix navbar navbar-fixed-top">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-3">
 
 				<!-- header-left start -->
 				<!-- ================ -->
-				<div class="header-left clearfix">
+				<div class="header-left clearfix" ng-show="!isChinese">
 
 					<!-- logo -->
 					<div class="logo smooth-scroll">
-						<a href="#banner"><img id="logo" class="ouicrealogo" src="assets/images/ouicrealogo.png" alt="Worthy"></a>
+						<a ng-click="main.backHome()"><img id="logo" class="ouicrealogo" src="assets/images/ouicrealogo1.png" alt="Worthy"></a>
 					</div>
 
 					<!-- name-and-slogan -->
-					<div class="site-name-and-slogan smooth-scroll">
-						<div class="site-name"><a href="">Ouicrea</a></div>
+					<!--<div class="site-name-and-slogan smooth-scroll">
+						<div class="site-name"><a ng-click="main.backHome()">Ouicrea</a></div>
 						<div class="site-slogan">欧创慧</div>
+					</div>-->
+
+				</div>
+				<div class="header-left clearfix" ng-show="isChinese">
+
+					<!-- logo -->
+					<div class="logo smooth-scroll">
+						<a ng-click="main.backHomeChinese()"><img id="logo" class="ouicrealogo" src="assets/images/ouicrealogo1.png" alt="Worthy"></a>
 					</div>
+
+					<!-- name-and-slogan -->
+					<!--<div class="site-name-and-slogan smooth-scroll">
+						<div class="site-name"><a ng-click="main.backHome()">Ouicrea</a></div>
+						<div class="site-slogan">欧创慧</div>
+					</div>-->
 
 				</div>
 				<!-- header-left end -->
 
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-9">
 
 				<!-- header-right start -->
 				<!-- ================ -->
@@ -49,14 +63,30 @@
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-									<ul class="nav navbar-nav navbar-right">
-										<li class="active" ng-show ="isNav"><a href="#mycarousel">Home</a></li>
-										<li ng-show ="!isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>
+									<ul class="nav navbar-nav navbar-right" ng-show="!isChinese">
+										<li class="active" ng-show ="isNav"><a href="#mycarousel">Accueil</a></li>
+										<!--<li ng-show ="isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>-->
 										<li><a href="#about" ng-show ="isNav">Nos Espace</a></li>
-										<li><a href="#services" ng-show ="isNav">Nos Chiffres</a></li>
 										<li><a href="#portfolio" ng-show ="isNav">Nouvelles</a></li>
-										<li><a href="#clients" ng-show ="isNav">Clients</a></li>
+										<li><a ui-sref="app.cha">CHA</a></li>
+										<li><a ui-sref="app.tour">OuiCrea Tour</a></li>
+										<!--<li><a href="#services" ng-show ="isNav">Nos Chiffres</a></li>-->
+										<!--<li><a href="#clients" ng-show ="isNav">Clients</a></li>-->
 										<li><a href="#contact" ng-show ="isNav">Nos contacts</a></li>
+										<li><a ng-click="main.toChinese()">中文</a></li>
+									</ul>
+									<ul class="nav navbar-nav navbar-right" ng-show="isChinese">
+										<li class="active" ng-show ="isNav"><a href="#mycarousel">首页</a></li>
+										<!--<li ng-show ="isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>-->
+										<li><a href="#about" ng-show ="isNav">空间</a></li>
+										<li><a href="#portfolio" ng-show ="isNav">新闻</a></li>
+										<li><a ui-sref="app.cncha">跨境孵化</a></li>
+										<li><a ui-sref="app.cntour">创新之旅</a></li>
+										<li><a ui-sref="app.cnclub">创投俱乐部</a></li>
+										<!--<li><a href="#services" ng-show ="isNav">Nos Chiffres</a></li>-->
+										<!--<li><a href="#clients" ng-show ="isNav">Clients</a></li>-->
+										<li><a href="#contact" ng-show ="isNav">联系我们</a></li>
+										<li><a ng-click="main.toFrench()">Français</a></li>
 									</ul>
 								</div>
 

@@ -95,9 +95,45 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 
 	app.backHome = function() {
 		$rootScope.isNav = true;
+        $rootScope.isChinese = false;
 		$location.path('/');
-	}
+	};
+    app.backHomeChinese = function() {
+        $rootScope.isNav = true;
+        $rootScope.isChinese = true;
+        $location.path('/cn');
+    };
+	app.toChinese = function() {
+        $rootScope.isChinese = true;
+        $state.go('app.cnbody');
+	};
+    app.toFrench = function() {
+        $rootScope.isChinese = false;
+        $state.go('app');
+    };
 
+})
+.controller('chaCtrl', function($scope,$rootScope){
+	app = this;
+    $rootScope.isNav = false;
+    app.carousel = function() {
+        setTimeout(function(){
+            $( '#example3' ).sliderPro({
+                width: 960,
+                height: 500,
+                fade: true,
+                arrows: true,
+                buttons: false,
+                fullScreen: true,
+                shuffle: true,
+                smallSize: 500,
+                mediumSize: 1000,
+                largeSize: 3000,
+                thumbnailArrows: true,
+                autoplay: false
+            });
+        },0);
+	}
 })
 .controller('newsCtrl', function(NewsFactory,$scope,TagFactory,$state,multipartForm, $stateParams,NewsGetFactory){
 	app = this;

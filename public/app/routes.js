@@ -18,6 +18,56 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
+	.state('app.cha', {
+        url:'cha',
+        views: {
+            'body@': {
+                templateUrl:'app/views/pages/cha.html',
+                controller: 'chaCtrl',
+                controllerAs: 'cha'
+            }
+        }
+	})
+	.state('app.tour', {
+		url:'tour',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/tour.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.space1', {
+		url:'space/cha',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/space1.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.space2', {
+		url:'space/shanghai',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/space2.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.space3', {
+		url:'space/suzhou',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/space3.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
 	.state('app.newspage', {
 		url:'newspage/:newsId',
 		views: {
@@ -25,6 +75,76 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 				templateUrl:'app/views/pages/newspage.html',
 				controller: 'pageCtrl',
 				controllerAs: 'page'
+			}
+		}
+	})
+	.state('app.cnbody', {
+		url:'cn',
+		views: {
+			'body@': {
+                templateUrl:'app/views/pages/cn/cnbody.html',
+                controller: 'mainCtrl',
+                controllerAs: 'main'
+			}
+		}
+	})
+	.state('app.cncha', {
+		url:'chacn',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cncha.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.cntour', {
+		url:'tourcn',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cntour.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+        .state('app.cnclub', {
+            url:'clubcn',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/cn/cnclub.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+	.state('app.cnspace1', {
+		url:'cnspace/cha',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cnspace1.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.cnspace2', {
+		url:'cnspace/shanghai',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cnspace2.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
+			}
+		}
+	})
+	.state('app.cnspace3', {
+		url:'cnspace/suzhou',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cnspace3.html',
+				controller: 'chaCtrl',
+				controllerAs: 'cha'
 			}
 		}
 	})

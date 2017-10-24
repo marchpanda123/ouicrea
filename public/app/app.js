@@ -26,7 +26,7 @@ angular.module('ouicreaApp', ['appRoutes','mainController','authServices','newsS
 				offset: 152
 			});
 		}
-		if ($(".smooth-scroll").length>0) {
+		/*if ($(".smooth-scroll").length>0) {
 			$('.smooth-scroll a[href*=#]:not([href=#]), a[href*=#]:not([href=#]).smooth-scroll').click(function() {
 				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 					var target = $(this.hash);
@@ -39,7 +39,7 @@ angular.module('ouicreaApp', ['appRoutes','mainController','authServices','newsS
 					}
 				}
 			});
-		}
+		}*/
 		if (($("[data-animation-effect]").length>0) && !Modernizr.touch) {
 			$("[data-animation-effect]").each(function() {
 				var $this = $(this),
