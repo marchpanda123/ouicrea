@@ -9,7 +9,7 @@ File Description:Main CSS file of the template */
 /* Typography
 ----------------------------------------------------------------------------- */
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif, "微软雅黑";
 }
 .site-name {
 	font-family: 'Raleway', sans-serif;
@@ -1474,6 +1474,22 @@ transition-delay:.2s;
 	height: 80px !important;
 	margin: -10px !important;
 }
-.special-logo-2{
-	height:30px !important;
+.special-logo-2 {
+	height: 30px !important;
+}
+.text-justify {
+	text-align: justify;
+}
+.tour-image {
+	margin-bottom: 5px;
+}
+.tour-image img{
+	margin:10px;
+	height:300px;
+	width:auto;
+}
+.tour-image-1 img{
+	margin:10px;
+	height:430px;
+	width:auto;
 }
