@@ -1431,6 +1431,7 @@ transition-delay:.2s;
 	padding-bottom:15px;
 	margin:15px 50px 32px;
 	border-bottom: 1px solid #ddd;
+	font-size:18px;
 }
 .sub-cha-body{
 	margin: 35px 50px 0px;
@@ -1444,10 +1445,12 @@ transition-delay:.2s;
 	margin: 20px 50px 30px;
 }
 .sub-cha-adr{
-	text-align: center;
+	text-align: left;
+	margin-left:50px;
+	font-size: 18px;
 }
 .sub-cha-card {
-	margin: 10px 50px 5px;
+	margin: 0px 50px 0px;
 }
 .sub-first-card {
 	margin-top:50px !important;
@@ -1485,11 +1488,66 @@ transition-delay:.2s;
 }
 .tour-image img{
 	margin:10px;
-	height:300px;
+	height:270px;
 	width:auto;
 }
 .tour-image-1 img{
 	margin:10px;
-	height:430px;
+	height:270px;
 	width:auto;
+}
+@media screen and (max-width: 480px) {
+	.navbar-background {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.title-logo-cha{
+	margin:5px auto !important;
+	width: 100px !important;
+}
+
+.title-home-a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.color-card-cha-1{
+	text-align: center !important;
+	background-color: #E3F2FD;
+}
+
+.color-card-cha-2{
+	text-align: center !important;
+	background-color: #BBDEFB;
+}
+
+.color-card-cha-3{
+	text-align: center !important;
+	background-color: #90CAF9;
+}
+
+.color-card-cha-4{
+	text-align: center !important;
+	background-color: #64B5F6;
+}
+
+.color-card-cha-5{
+	text-align: center !important;
+	background-color: #42A5F5;
+}
+
+.color-card-cha-6{
+	text-align: center !important;
+	background-color: #2196F3;
+}
+
+.color-card-cha-7{
+	text-align: center !important;
+	background-color: #1E88E5;
+}
+
+.zhihulogo{
+	display: inline-block;
+	width:42px;
 }

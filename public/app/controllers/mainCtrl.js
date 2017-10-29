@@ -112,6 +112,10 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
         $state.go('app');
     };
 
+    $scope.toHomeOuiCrea = function() {
+        $state.go('app',{},{reload:true});
+	};
+
 })
 .controller('chaCtrl', function($scope,$rootScope){
 	app = this;

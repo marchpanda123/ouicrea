@@ -3,14 +3,15 @@
 	<!-- ================ -->
 	<div class="footer section">
 		<div class="container">
-			<h1 class="title text-center" id="contact">Contactez-nous</h1>
+			<h1 class="title text-center" id="contact" ng-show="!isChinese">Contactez-nous</h1>
+			<h1 class="title text-center" id="contact1" ng-show="isChinese">联系我们</h1>
 			<div class="space"></div>
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="footer-content">
 						<p class="large"><i class="fa fa-envelope-o pr-10"></i>Contact@ouicrea.com</p>
 						<ul class="list-icons">
-							<li><i class="fa fa-map-marker pr-10"></i> 55 Boulevard Vincent-Auriol, 75013 Paris <br><i class="fa fa-phone pr-10"></i>+33 (0)671605960<br><i class="fa fa-envelope-o pr-10"></i>Email: weiyuan.xu@ouicrea.com<br><br></li>
+							<li><i class="fa fa-map-marker pr-10"></i> 55 Boulevard Vincent-Auriol, 75013 Paris <br><i class="fa fa-phone pr-10"></i>+33 (0)671605960<br><i class="fa fa-envelope-o pr-10"></i>Email: weiyuan.xu@ouicrea.com<br></li>
 							<li><i class="fa fa-map-marker pr-10"></i>333, Hongqiao Rd, Xuhui District, Shanghai, China<br><i class="fa fa-phone pr-10"></i>+86 (0)21 5466 7200<br><i class="fa fa-envelope-o pr-10"></i>Email: tianlun.li@ouicrea.com<br></li>
 							<li><i class="fa fa-map-marker pr-10"></i>58 Nantiancheng Rd, Xiangcheng District, Suzhou, China<br><i class="fa fa-phone pr-10"></i>+86 (0)21 5466 7200<br><i class="fa fa-envelope-o pr-10"></i>Email: yuan.liu@ouicrea.com</li>
 						</ul>
@@ -23,7 +24,7 @@
 							<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/11094106/"><i class="fa fa-linkedin"></i></a></li>
 							<li class="twitter"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzAwMjAzNDcxNg==&mid=2650243685&idx=1&sn=afb3b80e1cf225bcdb84a484ae15a50e&chksm=82d3bf16b5a43600b0475386857be668e5e51ccde5c4a915f6869591ad1d3149e7d9d680c7d2&mpshare=1&scene=1&srcid=1024gIBmVxbMJsOA8Twjwzfs&pass_ticket=08sf1nyq3Trcza%2B9bK56CvTfA9jPqReXfvYuAtcRu2sNTiVw%2BT8aPJTyWcnftzlT#rd
 "><i class="fa fa-weixin"></i></a></li>
-							<li class="twitter"><a target="_blank" href="https://www.zhihu.com/people/ouicrea/activities"><i class="fa fa-copyright"></i></a></li>
+							<li class="twitter"><a target="_blank" href="https://www.zhihu.com/people/ouicrea/activities"><img ng-src="assets/images/zhihulogo1.png" class="zhihulogo"></a></li>
 
 							<!--<li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
 							<li class="flickr"><a target="_blank" href="#"><i class="fa fa-flickr"></i></a></li>
