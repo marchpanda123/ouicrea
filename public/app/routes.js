@@ -148,6 +148,76 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
+        .state('app.enbody', {
+            url:'en',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/enbody.html',
+                    controller: 'mainCtrl',
+                    controllerAs: 'main'
+                }
+            }
+        })
+        .state('app.encha', {
+            url:'chaen',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/encha.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.entour', {
+            url:'touren',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/entour.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.enclub', {
+            url:'cluben',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/enclub.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.enspace1', {
+            url:'enspace/cha',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/enspace1.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.enspace2', {
+            url:'enspace/shanghai',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/enspace2.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.enspace3', {
+            url:'enspace/suzhou',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/enspace3.html',
+                    controller: 'chaCtrl',
+                    controllerAs: 'cha'
+                }
+            }
+        })
 	.state('ouicreaadmin', {
 		url:'/ouicreaadmin',
 		views: {

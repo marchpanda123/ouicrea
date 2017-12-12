@@ -3,8 +3,9 @@
 	<!-- ================ -->
 	<div class="footer section">
 		<div class="container">
-			<h1 class="title text-center" id="contact" ng-show="!isChinese">Contactez-nous</h1>
-			<h1 class="title text-center" id="contact1" ng-show="isChinese">联系我们</h1>
+			<h1 class="title text-center" id="contact" ng-show="!isChinese && !isEnglish">Contactez-nous</h1>
+			<h1 class="title text-center" id="contact1" ng-show="isChinese && !isEnglish">联系我们</h1>
+			<h1 class="title text-center" id="contact2" ng-show="isEnglish && !isChinese">Contact-us</h1>
 			<div class="space"></div>
 			<div class="row">
 				<div class="col-sm-6">

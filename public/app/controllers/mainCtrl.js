@@ -105,11 +105,18 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
     };
 	app.toChinese = function() {
         $rootScope.isChinese = true;
+        $rootScope.isEnglish = false;
         $state.go('app.cnbody');
 	};
     app.toFrench = function() {
         $rootScope.isChinese = false;
+        $rootScope.isEnglish = false;
         $state.go('app');
+    };
+    app.toEnglish = function() {
+        $rootScope.isEnglish = true;
+        $rootScope.isChinese = false;
+        $state.go('app.enbody');
     };
 
     $scope.toHomeOuiCrea = function() {

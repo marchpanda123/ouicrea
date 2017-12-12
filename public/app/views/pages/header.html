@@ -63,7 +63,7 @@
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse scrollspy smooth-scroll navbar-background" id="navbar-collapse-1">
-									<ul class="nav navbar-nav navbar-right" ng-show="!isChinese">
+									<ul class="nav navbar-nav navbar-right" ng-show="!isChinese && !isEnglish">
 										<li class="active" ng-show ="isNav"><a href="#mycarousel">Accueil</a></li>
 										<li class="active" ng-show ="!isNav"><a ng-click="toHomeOuiCrea()">Accueil</a></li>
 										<!--<li ng-show ="isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>-->
@@ -77,8 +77,9 @@
 										<li><a href="#contact" ng-show ="isNav">Nos contacts</a></li>
 										<li ng-show ="!isNav"><a href="#contact">Nos contacts</a></li>
 										<li><a ng-click="main.toChinese()">中文</a></li>
+										<li><a ng-click="main.toEnglish()">EN</a></li>
 									</ul>
-									<ul class="nav navbar-nav navbar-right" ng-show="isChinese">
+									<ul class="nav navbar-nav navbar-right" ng-show="isChinese && !isEnglish">
 										<li class="active" ng-show ="isNav"><a href="#mycarousel">首页</a></li>
 										<li class="active" ng-show ="!isNav"><a ng-click="toHomeOuiCrea()">首页</a></li>
 										<!--<li ng-show ="isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>-->
@@ -92,7 +93,24 @@
 										<!--<li><a href="#clients" ng-show ="isNav">Clients</a></li>-->
 										<li><a href="#contact1" ng-show ="isNav">联系我们</a></li>
 										<li ng-show ="!isNav"><a href="#contact1">联系我们</a></li>
-										<li><a ng-click="main.toFrench()">Français</a></li>
+										<li><a ng-click="main.toFrench()">FR</a></li>
+										<li><a ng-click="main.toEnglish()">EN</a></li>
+									</ul>
+									<ul class="nav navbar-nav navbar-right" ng-show="isEnglish && !isChinese">
+										<li class="active" ng-show ="isNav"><a href="#mycarousel">Home</a></li>
+										<li class="active" ng-show ="!isNav"><a ng-click="toHomeOuiCrea()">Home</a></li>
+										<!--<li ng-show ="isNav" class="pagehome"><a ng-click="main.backHome()">Home</a></li>-->
+										<li><a href="#about" ng-show ="isNav">Space</a></li>
+										<li ng-show ="!isNav"><a ng-click="toHomeOuiCrea()">Space</a></li>
+										<!--<li><a href="#portfolio" ng-show ="isNav">新闻</a></li>-->
+										<li><a ui-sref="app.encha">Incubation</a></li>
+										<li><a ui-sref="app.entour">Innovative</a></li>
+										<!--<li><a href="#services" ng-show ="isNav">Nos Chiffres</a></li>-->
+										<!--<li><a href="#clients" ng-show ="isNav">Clients</a></li>-->
+										<li><a href="#contact1" ng-show ="isNav">Contact us</a></li>
+										<li ng-show ="!isNav"><a href="#contact2">Contact us</a></li>
+										<li><a ng-click="main.toFrench()">FR</a></li>
+										<li><a ng-click="main.toChinese()">中文</a></li>
 									</ul>
 								</div>
 
