@@ -1555,3 +1555,17 @@ transition-delay:.2s;
 .pdf-a{
 	margin:24px;
 }
+.logo-first-line a{
+	width:24%;
+	display: inline-block;
+	text-align: center;
+}
+.logo-line a{
+	width:19%;
+	display: inline-block;
+	text-align: center;
+}
+.logo-line a img{
+	width:auto;
+	height:50px;
+}

@@ -184,10 +184,23 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 	}
 
 	app.deleteNews = function(news) {
-		news.$delete({newsId:news._id})
-		.then(function() {
-			app.news.splice(app.news.indexOf(news),1)
-		})
+        swal({
+            title: "确定吗?",
+            text: "请慎重做出选择！",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: '是的，我要删除',
+            cancelButtonText: "取消"
+        }).then(function(){
+            swal('已删除！','已成功删除','success');
+            news.$delete({newsId:news._id})
+                .then(function() {
+                    app.news.splice(app.news.indexOf(news),1)
+                })
+        },function(){
+        });
+
 	}
 
 	app.listTag = function() {
@@ -247,10 +260,22 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 	}
 
 	$scope.deleteTag = function(tags) {
-		tags.$delete({tagId:tags._id})
-		.then(function() {
-			app.tags.splice(app.tags.indexOf(tags),1)
-		})
+        swal({
+            title: "确定吗?",
+            text: "请慎重做出选择！",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: '是的，我要删除',
+            cancelButtonText: "取消"
+        }).then(function(){
+            swal('已删除！','已成功删除','success');
+            tags.$delete({tagId:tags._id})
+                .then(function() {
+                    app.tags.splice(app.tags.indexOf(tags),1)
+                })
+        },function(){
+        });
 	}
 
 	//addfunc
@@ -276,8 +301,9 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 		.then(function(newProject) {
 			app.projects.push(newProject);
 			app.sucmsg = true;
+			alert('恭喜您，提交成功');
 		});
-	}
+	};
 
 	app.updateProject = function(projects) {
 		projects.$save({projectId:projects._id})
@@ -288,10 +314,22 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 	}
 
 	$scope.deleteProject = function(projects) {
-		projects.$delete({projectId:projects._id})
-		.then(function() {
-			app.projects.splice(app.projects.indexOf(projects),1)
-		})
+        swal({
+            title: "确定吗?",
+            text: "请慎重做出选择！",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: '是的，我要删除',
+            cancelButtonText: "取消"
+        }).then(function(){
+            swal('已删除！','已成功删除','success');
+            projects.$delete({projectId:projects._id})
+                .then(function() {
+                    app.projects.splice(app.projects.indexOf(projects),1)
+                })
+        },function(){
+        });
 	}
 
 	app.listProject();

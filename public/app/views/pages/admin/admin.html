@@ -358,7 +358,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-repeat="item in project.projects">
+                                    <tr ng-repeat="item in project.projects | orderBy:'-created'">
                                         <td ng-bind="$index+1">1</td>
                                         <td>{{item.p_username}}</td>
                                         <td>{{item.p_title}}</td>

@@ -307,7 +307,7 @@
 
 <!-- section start -->
 <!-- ================ -->
-<!--<div class="section">
+<div class="section">
     <div class="container">
         <h1 class="text-center title" id="portfolio">新闻动态</h1>
         <div class="separator"></div>
@@ -315,16 +315,11 @@
         <br>
         <div class="row object-non-visible" data-animation-effect="fadeIn">
             <div class="col-md-12">
-
-                &lt;!&ndash; isotope filters start &ndash;&gt;
                 <div class="filters text-center" ng-controller="tagCtrl as tag">
                     <ul class="nav nav-pills">
                         <li ng-repeat="item in tag.tags"><a href="#" data-filter="*">{{item.t_name}}</a></li>
                     </ul>
                 </div>
-                &lt;!&ndash; isotope filters end &ndash;&gt;
-
-                &lt;!&ndash; portfolio items start &ndash;&gt;
                 <div class="isotope-container row grid-space-20" ng-controller="newsCtrl as news">
                     <div class="col-sm-6 col-md-3 isotope-item web-design" ng-repeat="item in news.news">
                         <div class="image-box">
@@ -341,12 +336,10 @@
                     </div>
 
                 </div>
-                &lt;!&ndash; portfolio items end &ndash;&gt;
-
             </div>
         </div>
     </div>
-</div>-->
+</div>
 <!-- section end -->
 
 <!-- section start -->
@@ -499,27 +492,42 @@
                 <h1 class="text-center">合作伙伴</h1>
             </div>
             <div>
-                <a href="http://www.sjtusp.com/home.php" target="_blank"><img src="assets/images/logo/1.png" class="parter-logo"></a>
-                <a href="http://www.withub.org/home.php" target="_blank"><img src="assets/images/logo/2.png" class="parter-logo"></a>
-                <a href="#" target="_blank"><img src="assets/images/logo/3.png" class="parter-logo"></a>
-                <a href="https://stationf.co/fr/" target="_blank"><img src="assets/images/logo/4.png" class="parter-logo"></a>
-                <a href="https://www.usine.io/focus" target="_blank"><img src="assets/images/logo/5.png" class="parter-logo special-logo-2"></a>
-                <a href="http://www.utseus.com/fr" target="_blank"><img src="assets/images/logo/6.png" class="parter-logo"></a>
-                <a href="http://www.skema-bs.fr" target="_blank"><img src="assets/images/logo/7.png" class="parter-logo"></a>
-                <a href="http://alumni.sjtu.edu.cn/newalu/gdxyshow.php?id=256" target="_blank"><img src="assets/images/logo/8.png" class="parter-logo"></a>
-                <a href="http://www.parisandco.paris" target="_blank"><img src="assets/images/logo/9.png" class="parter-logo"></a>
-                <a href="http://www.xineurope.com" target="_blank"><img src="assets/images/logo/10.png" class="parter-logo"></a>
-                <a href="http://www.comitefrancechine.com" target="_blank"><img src="assets/images/logo/11.png" class="parter-logo"></a>
-                <a href="https://www.raizers.com" target="_blank"><img src="assets/images/logo/12.png" class="parter-logo"></a>
-                <a href="http://www.univfr.com" target="_blank"><img src="assets/images/logo/13.png" class="parter-logo"></a>
-                <a href="http://xilian-group.com/index.html" target="_blank"><img src="assets/images/logo/14.png" class="parter-logo"></a>
-                <a href="http://www.oushinet.com" target="_blank"><img src="assets/images/logo/15.png" class="parter-logo"></a>
-                <a href="http://www.eurosity.fr/fr/" target="_blank"><img src="assets/images/logo/16.png" class="parter-logo"></a>
-                <a href="http://xilian-group.com/index.html" target="_blank"><img src="assets/images/logo/17.png" class="parter-logo special-logo-1"></a>
-                <a href="http://www.o-tec.cn" target="_blank"><img src="assets/images/logo/18.png" class="parter-logo"></a>
-                <a href="#" target="_blank"><img src="assets/images/logo/19.png" class="parter-logo"></a>
-                <a href="http://angelsglobal.com" target="_blank"><img src="assets/images/logo/20.png" class="parter-logo"></a>
+                <div class="logo-line">
+                    <a href="http://www.sjtusp.com/home.php" target="_blank"><img src="assets/images/logo/1.png" class="parter-logo"></a>
+                    <a href="https://visa.lafrenchtech.com" target="_blank"><img src="assets/images/logo/21.png" class="parter-logo"></a>
+                    <a href="https://www.creative-valley.fr" target="_blank"><img src="assets/images/logo/22.png" class="parter-logo"></a>
+                    <a href="https://stationf.co/fr/" target="_blank"><img src="assets/images/logo/4.png" class="parter-logo"></a>
+                    <a href="http://www.utseus.com/fr" target="_blank"><img src="assets/images/logo/6.png" class="parter-logo"></a>
+                </div>
+                <div class="logo-line">
 
+                    <a href="https://www.raizers.com" target="_blank"><img src="assets/images/logo/12.png" class="parter-logo"></a>
+                    <a href="http://www.eurosity.fr/fr/" target="_blank"><img src="assets/images/logo/16.png" class="parter-logo"></a>
+                    <a href="https://www.usine.io/focus" target="_blank"><img src="assets/images/logo/5.png" class="parter-logo special-logo-2"></a>
+                    <a href="http://www.oushinet.com" target="_blank"><img src="assets/images/logo/15.png" class="parter-logo"></a>
+                    <a href="http://www.univfr.com" target="_blank"><img src="assets/images/logo/13.png" class="parter-logo"></a>
+                </div>
+                <div class="logo-line">
+
+                    <a href="http://www.xineurope.com" target="_blank"><img src="assets/images/logo/10.png" class="parter-logo"></a>
+                    <a href="http://www.withub.org/home.php" target="_blank"><img src="assets/images/logo/2.png" class="parter-logo"></a>
+                    <a href="http://www.skema-bs.fr" target="_blank"><img src="assets/images/logo/7.png" class="parter-logo"></a>
+                    <a href="http://www.parisandco.paris" target="_blank"><img src="assets/images/logo/9.png" class="parter-logo"></a>
+                    <a href="http://www.comitefrancechine.com" target="_blank"><img src="assets/images/logo/11.png" class="parter-logo"></a>
+                </div>
+                <div class="logo-line">
+
+                    <a href="http://www.metalecocity.com/platform/post/3.php" target="_blank"><img src="assets/images/logo/14.png" class="parter-logo"></a>
+                    <a href="http://www.o-tec.cn" target="_blank"><img src="assets/images/logo/18.png" class="parter-logo"></a>
+                    <a href="http://www.subaonet.com/2015/1117/1581830.html" target="_blank"><img src="assets/images/logo/3.png" class="parter-logo"></a>
+                    <a href="http://angelsglobal.com" target="_blank"><img src="assets/images/logo/20.png" class="parter-logo"></a>
+                    <a href="http://xilian-group.com/index.html" target="_blank"><img src="assets/images/logo/14.png" class="parter-logo"></a>
+                </div>
+                <div class="logo-line">
+
+                    <a href="http://www.o-tec.cn" target="_blank"><img src="assets/images/logo/23.png" class="parter-logo"></a>
+                    <a href="https://www.tongji.edu.cn/" target="_blank"><img src="assets/images/logo/24.png" class="parter-logo"></a>
+                </div>
             </div>
         </div>
     </div>

@@ -14,16 +14,20 @@
                                 <th>申请人</th>
                                 <th>申请人联系方式</th>
                                 <th>项目名</th>
+                                <th>项目内容</th>
                                 <th>申请时间</th>
+                                <th>操作</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="item in project.projects">
+                            <tr ng-repeat="item in project.projects | orderBy:'-created'">
                                 <td ng-bind="$index+1">1</td>
                                 <td>{{item.p_username}}</td>
                                 <td>{{item.p_usercontact}}</td>
                                 <td>{{item.p_title}}</td>
+                                <td>{{item.p_content}}</td>
                                 <td>{{item.created | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+                                <td><a ng-click="deleteProject(item)">删除</a></td>
                             </tr>
                         </tbody>
                     </table>
