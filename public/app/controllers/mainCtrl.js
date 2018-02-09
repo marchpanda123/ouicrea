@@ -301,7 +301,7 @@ angular.module('mainController', ['authServices','newsServices','tagServices','p
 		.then(function(newProject) {
 			app.projects.push(newProject);
 			app.sucmsg = true;
-			alert('恭喜您，提交成功');
+			alert('恭喜您，提交成功/soumis avec succès');
 		});
 	};
 
