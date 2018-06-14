@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Ouicrea 后台管理系统</a>
+            <a class="navbar-brand" href="index.html">Ouicrea 后台管理系统(Dashboard)</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -238,16 +238,16 @@
                         <!-- /input-group -->
                     </li>
                     <li>
-                        <a ui-sref="admin"><i class="fa fa-dashboard fa-fw"></i>控制台</a>
+                        <a ui-sref="admin"><i class="fa fa-dashboard fa-fw"></i>控制台/dashboard</a>
                     </li>
                     <li>
-                        <a ui-sref="admin.tag"><i class="fa fa-dashboard fa-fw"></i>标签管理</a>
+                        <a ui-sref="admin.tag"><i class="fa fa-dashboard fa-fw"></i>标签管理/tags</a>
                     </li>
                     <li>
-                        <a ui-sref="admin.news"><i class="fa fa-table fa-fw"></i> 文章管理</a>
+                        <a ui-sref="admin.news"><i class="fa fa-table fa-fw"></i> 文章管理/articles</a>
                     </li>
                     <li>
-                        <a ui-sref="admin.project"><i class="fa fa-table fa-fw"></i> 项目申请</a>
+                        <a ui-sref="admin.project"><i class="fa fa-table fa-fw"></i> 项目申请/apply</a>
                     </li>
                 </ul>
             </div>
@@ -262,11 +262,10 @@
 
         <div>
             <ul class="admin-ul">
-                <li class="matrix-card"><a ui-sref="admin">控制台</a></li>
-                <li class="matrix-card green"><a ui-sref="admin.tag">我的标签</a></li>
-                <li class="matrix-card yellow"><a ui-sref="admin.news">我的文章</a></li>
-                <li class="matrix-card orange"><a ui-sref="admin">我的项目</a></li>
-                <li class="matrix-card bluels"><a ui-sref="admin">我的项目</a></li>
+                <li class="matrix-card"><a ui-sref="admin">控制台/dashboard</a></li>
+                <li class="matrix-card green"><a ui-sref="admin.tag">我的标签/tags</a></li>
+                <li class="matrix-card yellow"><a ui-sref="admin.news">我的文章/articles</a></li>
+                <li class="matrix-card orange"><a ui-sref="admin">我的项目/projects</a></li>
             </ul>
         </div>
         
@@ -274,7 +273,7 @@
             <div class="col-lg-8" ng-controller="newsCtrl as news">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        我的文章中心
+                        我的文章中心/articles
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -283,9 +282,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>文章标题</th>
-                                        <th>创建时间</th>
-                                        <th>分类</th>
+                                        <th>文章标题/title</th>
+                                        <th>创建时间/created</th>
+                                        <th>分类/catalogue</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -309,7 +308,7 @@
             <div class="col-lg-4"  ng-controller="tagCtrl as tag">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        我的标签中心
+                        我的标签中心/tags
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -318,8 +317,8 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>标签名</th>
-                                        <th>创建时间</th>
+                                        <th>标签名/tagname</th>
+                                        <th>创建时间/created</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -343,7 +342,7 @@
             <div class="col-lg-12" ng-controller="projectCtrl as project">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        项目申请中心
+                        项目申请中心/apply
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -352,9 +351,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>申请人</th>
-                                        <th>项目名</th>
-                                        <th>申请时间</th>
+                                        <th>申请人/name</th>
+                                        <th>项目名/project</th>
+                                        <th>申请时间/created</th>
                                     </tr>
                                 </thead>
                                 <tbody>

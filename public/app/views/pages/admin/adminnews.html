@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">文章板块</h1>
+        <h1 class="page-header">文章板块/articles</h1>
     </div>
     <div>
-        <a ui-sref="admin.addnews">添加文章</a>
+        <a ui-sref="admin.addnews">添加文章/add</a>
     </div>
     <!-- /.col-lg-12 -->
 </div>
@@ -12,7 +12,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                DataTables Advanced Tables
+                文章列表/lists
             </div>
             
             <!-- /.panel-heading -->
@@ -20,20 +20,20 @@
                 <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                     <thead>
                         <tr>
-                            <th>文章图片</th>
-                            <th>文章标题</th>
-                            <th>文章标签</th>
-                            <th>创建时间</th>
-                            <th>操作</th>
+                            <th>文章图片/img</th>
+                            <th>文章标题/title</th>
+                            <th>文章标签/tag</th>
+                            <th>创建时间/created</th>
+                            <th>操作/todo</th>
                         </tr>
                     </thead>
-                    <tbody ng-repeat="item in news.news">{{item.n_title}}>
+                    <tbody ng-repeat="item in news.news">{{item.n_title}}
                         <tr class="gradeX">
                             <td><img ng-src="uploads/newspage/{{item.n_page}}" class="newspage"></td>
                             <td>{{item.n_title}}</td>
                             <td>{{item.n_belongTag.t_name}}</td>
                             <td class="center">{{item.created | date:"MM/dd/yyyy 'at' h:mma"}}</td>
-                            <td class="center"><a ng-click="news.deleteNews(item)">删除</a></td>
+                            <td class="center"><a ng-click="news.deleteNews(item)">删除/delete</a></td>
                         </tr>
                     </tbody>
                 </table>

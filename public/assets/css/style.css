@@ -134,7 +134,6 @@ blockquote {
 	z-index: 2;
 }
 
-}
 .subfooter {
 	background-color: #fafafa;
 	border-top: 1px solid #f3f3f3;
@@ -693,7 +692,7 @@ textarea {
 	left: 50%;
 	top: 50%;
 	font-size: 18px;
-	line-height: 1x;
+	line-height: 1px;
 	color: #ffffff;
 	margin-top: -8px;
 	margin-left: -8px;
@@ -859,9 +858,9 @@ textarea {
    color: rgba(255,255,255,0.6);
 }
 
-::-moz-input-placeholder{
+/*::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
-}
+}*/
 
 .btn-es {
 	min-width: 20px !important;
@@ -1173,7 +1172,7 @@ ul.title-bar li span{
 }
 
 .button-us-home{
-  z-index: 5px;
+  z-index: 5;
 }
 .p-grey{
 	color: grey;
