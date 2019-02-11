@@ -1587,3 +1587,24 @@ transition-delay:.2s;
 	color: #FFFFFF;
 	text-decoration: none;
 }
+.homeKeyPoint {
+	background-color: #FFFFFF;
+	width:120px;
+	height:120px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+}
+.homeKeyPoint span{
+	color: #339BEB;
+	position: relative;
+	top: 33%;
+	left: 23%;
+	font-size: 30px;
+}
+.homeKeyPointText {
+	margin: 15px 0 0 20px;
+}
+.homeKeyPointText p{
+	font-size: 20px;
+}
