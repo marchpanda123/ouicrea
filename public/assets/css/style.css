@@ -1568,3 +1568,22 @@ transition-delay:.2s;
 	width:auto;
 	height:50px;
 }
+
+.homeApply {
+	text-align: center;
+}
+.homeApplyButton {
+	width:150px;
+	height:38px;
+	background: #339BEB;
+	color: #FFFFFF;
+	font-size:18px;
+	border:none;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+.homeApplyButton a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
