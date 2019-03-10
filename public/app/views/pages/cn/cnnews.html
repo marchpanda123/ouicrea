@@ -1,0 +1,47 @@
+<div class="hidden-xs">
+    <div class="title-home">
+        <p><a ui-sref="app.space1" class="title-home-a">欧创慧</a></p>
+        <p><a ui-sref="app.space2" class="title-home-a">创业资讯</a></p>
+    </div>
+    <video autoplay loop src="assets/video/video.mp4" class="video-home">
+        <img src="assets/img/1.jpg">
+    </video>
+</div>
+
+<div id="mainOrder" class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12 orderfood-index-bg" ng-init="cha.carousel()">
+                <div class="foodpageimg">
+                    <p class="title-space">欧创慧最新动态，请持续关注</p>
+                </div>
+                <div class="row object-non-visible" data-animation-effect="fadeIn">
+                    <div class="col-md-12">
+                        <div class="filters text-center" ng-controller="tagCtrl as tag">
+                            <ul class="nav nav-pills">
+                                <li ng-repeat="item in tag.tags"><a href="#" data-filter="*">{{item.t_name}}</a></li>
+                            </ul>
+                        </div>
+                        <div class="isotope-container row grid-space-20" ng-controller="newsCtrl as news">
+                            <div class="col-sm-6 col-md-3 isotope-item web-design" ng-repeat="item in news.news">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img ng-src="uploads/newspage/{{item.n_page}}" class="nouvelleimg">
+                                        <a class="overlay" ng-click="news.toArticle(item)">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>{{item.n_bref}}</span>
+                                        </a>
+                                    </div>
+                                    <a class="btn btn-default btn-block">{{item.n_title}}</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

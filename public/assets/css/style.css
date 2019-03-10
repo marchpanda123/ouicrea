@@ -1565,8 +1565,8 @@ transition-delay:.2s;
 	text-align: center;
 }
 .logo-line a img{
-	width:auto;
-	height:50px;
+	width: 120px;
+	height: 50px;
 }
 
 .homeApply {
@@ -1662,4 +1662,15 @@ transition-delay:.2s;
 .text a {
 	color: #000000;
 	text-decoration: none;
+}
+
+.more_button {
+	color: white;
+	background: dodgerblue;
+	border: none;
+	width: 180px;
+	height: 35Px;
+}
+.more_button a {
+	color: white;
 }

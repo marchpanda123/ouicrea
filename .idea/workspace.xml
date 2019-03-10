@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a053dbaa-4535-4ac4-8f4e-985859bb7eb3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logo/9.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/pages/cn/cnnews.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/pages/en/ennews.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/pages/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/01.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/02.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/03.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/04.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/05.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/06.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/07.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/07.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/08.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/08.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/09.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/09.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/10.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/10.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/11.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/11.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/12.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/12.png" />
@@ -26,43 +29,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/22.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/22.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/23.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/23.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo/24.png" afterPath="$PROJECT_DIR$/public/assets/images/logo/24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ouicrea1.jpg" afterPath="$PROJECT_DIR$/public/assets/images/ouicrea1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ouicrea2.jpg" afterPath="$PROJECT_DIR$/public/assets/images/ouicrea2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ouicrea3.jpg" afterPath="$PROJECT_DIR$/public/assets/images/ouicrea3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ouicrea4.jpg" afterPath="$PROJECT_DIR$/public/assets/images/ouicrea4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ouicrea5.jpg" afterPath="$PROJECT_DIR$/public/assets/images/ouicrea5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/14.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/18.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/19.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/25.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/27.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/29.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/30.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/31.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/32.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/33.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/35.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/36.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pic/38.jpg" afterPath="$PROJECT_DIR$/public/assets/images/pic/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai2.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai3.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai5.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai7.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai8.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/shanghai9.jpg" afterPath="$PROJECT_DIR$/public/assets/images/shanghai9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/routes.js" afterPath="$PROJECT_DIR$/public/app/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/body.html" afterPath="$PROJECT_DIR$/public/app/views/pages/body.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/cha.html" afterPath="$PROJECT_DIR$/public/app/views/pages/cha.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/cn/cnbody.html" afterPath="$PROJECT_DIR$/public/app/views/pages/cn/cnbody.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/cn/cncha.html" afterPath="$PROJECT_DIR$/public/app/views/pages/cn/cncha.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html" afterPath="$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html" afterPath="$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/en/enbody.html" afterPath="$PROJECT_DIR$/public/app/views/pages/en/enbody.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/en/encha.html" afterPath="$PROJECT_DIR$/public/app/views/pages/en/encha.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/en/enspace2.html" afterPath="$PROJECT_DIR$/public/app/views/pages/en/enspace2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/en/enspace3.html" afterPath="$PROJECT_DIR$/public/app/views/pages/en/enspace3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/header.html" afterPath="$PROJECT_DIR$/public/app/views/pages/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/space2.html" afterPath="$PROJECT_DIR$/public/app/views/pages/space2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/pages/space3.html" afterPath="$PROJECT_DIR$/public/app/views/pages/space3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,8 +58,8 @@
       <file leaf-file-name="body.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/pages/body.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="92" />
+            <state relative-caret-position="570">
+              <caret line="324" column="70" lean-forward="false" selection-start-line="324" selection-start-column="70" selection-end-line="324" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -89,6 +68,16 @@
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/pages/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,26 +85,69 @@
       <file leaf-file-name="enbody.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enbody.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+            <state relative-caret-position="494">
+              <caret line="322" column="66" lean-forward="false" selection-start-line="322" selection-start-column="66" selection-end-line="322" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnbody.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="1674" column="17" lean-forward="false" selection-start-line="1674" selection-start-column="17" selection-end-line="1674" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cnbody.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnbody.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="599">
+              <caret line="412" column="62" lean-forward="false" selection-start-line="412" selection-start-column="56" selection-end-line="412" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cnnews.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnnews.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ennews.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/ennews.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="194" column="52" lean-forward="false" selection-start-line="194" selection-start-column="52" selection-end-line="194" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/pages/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,6 +163,8 @@
       <find>parter</find>
       <find>background-image</find>
       <find>fullscreenfunc</find>
+      <find>logo-line</find>
+      <find>Partenaire</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +178,6 @@
         <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnclub.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/tour.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/cn/cntour.html" />
-        <option value="$PROJECT_DIR$/public/app/routes.js" />
         <option value="$PROJECT_DIR$/public/app/views/pages/en/enspace1.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/en/enclub.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/en/entour.html" />
@@ -159,20 +192,25 @@
         <option value="$PROJECT_DIR$/public/app/views/pages/footer.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/space1.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnspace1.html" />
-        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/header.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/space2.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/en/enspace2.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/space3.html" />
-        <option value="$PROJECT_DIR$/public/app/views/pages/en/enspace3.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/cn/cncha.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/en/encha.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/cha.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/space2.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/space3.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/en/enspace3.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/en/enspace2.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/header.html" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/cn/news.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnnews.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/news.html" />
+        <option value="$PROJECT_DIR$/public/app/views/pages/en/ennews.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/body.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/en/enbody.html" />
         <option value="$PROJECT_DIR$/public/app/views/pages/cn/cnbody.html" />
+        <option value="$PROJECT_DIR$/public/app/routes.js" />
       </list>
     </option>
   </component>
@@ -207,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,18 +304,10 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ouicrea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ouicrea" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,6 +316,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -348,20 +384,22 @@
       <workItem from="1548416248529" duration="245000" />
       <workItem from="1548424897641" duration="630000" />
       <workItem from="1549848233070" duration="4284000" />
-      <workItem from="1550003370936" duration="2595000" />
+      <workItem from="1550003370936" duration="2855000" />
+      <workItem from="1552238883854" duration="3490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81606000" />
+    <option name="totallyTimeSpent" value="85356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11075612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16187434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24365482" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -375,7 +413,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -390,27 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/services/tagServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/userServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/projectServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/services/newsServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -436,13 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2262">
-          <caret line="54" column="58" lean-forward="true" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -538,24 +547,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/controllers/mainCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/pages/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="111" lean-forward="false" selection-start-line="16" selection-start-column="111" selection-end-line="16" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="63" lean-forward="true" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -609,91 +604,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="72" column="74" lean-forward="false" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5762">
-          <caret line="4" column="72" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="286" column="56" lean-forward="false" selection-start-line="286" selection-start-column="56" selection-end-line="286" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="288" column="20" lean-forward="false" selection-start-line="288" selection-start-column="20" selection-end-line="288" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enspace2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="216" column="54" lean-forward="true" selection-start-line="216" selection-start-column="54" selection-end-line="216" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="217" column="75" lean-forward="true" selection-start-line="217" selection-start-column="75" selection-end-line="217" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enspace3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="220" column="408" lean-forward="true" selection-start-line="220" selection-start-column="408" selection-end-line="220" selection-end-column="408" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="1646" column="15" lean-forward="false" selection-start-line="1646" selection-start-column="15" selection-end-line="1646" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/pages/cha.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,11 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,17 +622,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6344">
+          <caret line="244" column="29" lean-forward="true" selection-start-line="241" selection-start-column="20" selection-end-line="244" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7490">
+          <caret line="291" column="106" lean-forward="true" selection-start-line="289" selection-start-column="20" selection-end-line="291" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enspace2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7686">
+          <caret line="303" column="24" lean-forward="false" selection-start-line="303" selection-start-column="20" selection-end-line="306" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enspace3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="222" column="84" lean-forward="true" selection-start-line="222" selection-start-column="84" selection-end-line="222" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="284" column="48" lean-forward="false" selection-start-line="284" selection-start-column="44" selection-end-line="284" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnspace3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="221" column="49" lean-forward="false" selection-start-line="221" selection-start-column="49" selection-end-line="221" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/controllers/mainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="148" column="21" lean-forward="false" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/space1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="250" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="1674" column="17" lean-forward="false" selection-start-line="1674" selection-start-column="17" selection-end-line="1674" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnnews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/ennews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/pages/body.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="92" />
+        <state relative-caret-position="570">
+          <caret line="324" column="70" lean-forward="false" selection-start-line="324" selection-start-column="70" selection-end-line="324" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -735,26 +754,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/pages/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/pages/en/enbody.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+        <state relative-caret-position="494">
+          <caret line="322" column="66" lean-forward="false" selection-start-line="322" selection-start-column="66" selection-end-line="322" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/pages/cn/cnbody.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="599">
+          <caret line="412" column="62" lean-forward="false" selection-start-line="412" selection-start-column="56" selection-end-line="412" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="194" column="52" lean-forward="false" selection-start-line="194" selection-start-column="52" selection-end-line="194" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

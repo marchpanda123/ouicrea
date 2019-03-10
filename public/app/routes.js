@@ -28,6 +28,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             }
         }
 	})
+	.state('app.news', {
+		url:'news',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/news.html',
+				controller: 'newsCtrl',
+				controllerAs: 'news'
+			}
+		}
+	})
 	.state('app.tour', {
 		url:'tour',
 		views: {
@@ -98,6 +108,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}
 	})
+	.state('app.cnnews', {
+		url:'cnnews',
+		views: {
+			'body@': {
+				templateUrl:'app/views/pages/cn/cnnews.html',
+				controller: 'newsCtrl',
+				controllerAs: 'news'
+			}
+		}
+	})
 	.state('app.cntour', {
 		url:'tourcn',
 		views: {
@@ -165,6 +185,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
                     templateUrl:'app/views/pages/en/encha.html',
                     controller: 'chaCtrl',
                     controllerAs: 'cha'
+                }
+            }
+        })
+        .state('app.ennews', {
+            url:'ennews',
+            views: {
+                'body@': {
+                    templateUrl:'app/views/pages/en/ennews.html',
+                    controller: 'newsCtrl',
+                    controllerAs: 'news'
                 }
             }
         })
